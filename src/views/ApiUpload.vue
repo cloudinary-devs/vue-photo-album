@@ -1,0 +1,26 @@
+<script setup>
+import DragAndDrop from '../components/DragAndDrop.vue'
+</script>
+<template>
+  <div class="m-2 space-y-4">
+    <h1 class="text-5xl font-bold">API Upload</h1>
+    <p class="m-2">This example shows how to upload images via the Upload API.</p>
+    <div class="m-2">
+      Please note that the following defaults are being used:
+      <ul class="list-disc list-inside">
+        <li>The sample uses the HTML5 Drag & Drop API.</li>
+        <li>
+          The
+          <code class="bg-black text-gray-100 px-2 py-1 rounded-md text-sm"> myphotoalbum-vue</code>
+          tag gets added to all photos uploaded via this method (this is used in the photo album to
+          retrieve images).
+        </li>
+        <li>
+          Only images are displayed in the photo album, even though you can potentially upload other
+          file types here too.
+        </li>
+      </ul>
+    </div>
+    <DragAndDrop />
+  </div>
+</template>
