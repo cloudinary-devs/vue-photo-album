@@ -1,35 +1,14 @@
-# vue-pa
+# Setup
 
-This template should help get you started developing with Vue 3 in Vite.
+Create an unsigned upload preset in your Cloudinary product environment.
 
-## Recommended IDE Setup
+Create a `.env` file with the following content:
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
+```
+VITE_CLOUD_NAME='YOUR-CLOUD-NAME'
+VITE_UPLOAD_PRESET='YOUR-UNSIGNED-UPLOAD-PRESET'
 ```
 
-### Compile and Hot-Reload for Development
+# Run
 
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+`npm run dev` or `npm run build`
