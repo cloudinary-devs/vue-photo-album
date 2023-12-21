@@ -1,5 +1,5 @@
 <script setup>
-import { AdvancedImage, responsive, placeholder } from '@cloudinary/vue'
+import { AdvancedImage, placeholder } from '@cloudinary/vue'
 import { Cloudinary } from '@cloudinary/url-gen'
 import { thumbnail } from '@cloudinary/url-gen/actions/resize'
 import { autoGravity } from '@cloudinary/url-gen/qualifiers/gravity'
@@ -22,7 +22,7 @@ const myImage = cld
   .resize(thumbnail().width(300).height(300).gravity(autoGravity()))
   .delivery(format('auto'))
   .delivery(quality('auto'))
-const plugins = [responsive(), placeholder()]
+const plugins = [placeholder()]
 </script>
 
 <template>
@@ -30,6 +30,6 @@ const plugins = [responsive(), placeholder()]
     :cldImg="myImage"
     style="max-width: 100%"
     :plugins="plugins"
-    className="w-full h-64 object-cover max-w-sm rounded-lg shadow-lg"
+    className="rounded-lg shadow-lg"
   />
 </template>
